@@ -198,7 +198,14 @@ try {
     Write-Host "Website is down."
 }
 ```
+To launch it on linux : 
 
+`pwsh script.ps1`
+
+
+To launch it from CMD :
+
+`powershell -ExecutionPolicy Bypass -File "PATH/TO/THE/FILE"`
 
 # Different PowerShell Script that I made :
 
