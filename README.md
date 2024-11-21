@@ -11,15 +11,16 @@
 # Shell Linux vs PowerShell Comparison
 
 | **Action**              | **Linux Shell**          | **PowerShell**                                | **PowerShell Explanation**                                                        |
-|------------------------- -------------------------- -----------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------|--------------------------|-----------------------------------------------|-----------------------------------------------------------------------------------|
 | Display a message       | `echo "Hello"`           | `Write-Host "Hello"`                          | `Write-Host` displays text in color in the console.                               |
 | Change directory        | `cd /path/to/directory`  | `Set-Location -Path "C:\Path\To\Folder"`      | `Set-Location` (alias: `cd`) changes the current working directory.               |
-| List files              | `ls -l`                  | `Get-ChildItem`                               | Lists files and directories in the current directory.                             |
-| Create a file           | `touch file.txt`         | `New-Item -Path "file.txt" -ItemType File`    | `New-Item` creates files or directories.                                          |
-| Delete a file           | `rm file.txt`            | `Remove-Item -Path "file.txt"`                | Deletes a specified file or directory.                                            |
-| Install a package       | `apt install package`    | `Install-Package -Name package`               | Installs a package via a manager like Chocolatey.                                 |
-| Search within a file    | `grep "text" file.txt`   | `Select-String -Pattern "text" -Path file.txt`| Searches for specific text in a file.                                             |
-| Download a file         | `wget URL`               | `Invoke-WebRequest -Uri URL -OutFile file`    | Downloads a file from a URL.                                                      |
+| List files              | `ls -l`                 | `Get-ChildItem`                               | Lists files and directories in the current directory.                             |
+| Create a file           | `touch file.txt`        | `New-Item -Path "file.txt" -ItemType File`    | `New-Item` creates files or directories.                                          |
+| Delete a file           | `rm file.txt`           | `Remove-Item -Path "file.txt"`                | Deletes a specified file or directory.                                            |
+| Install a package       | `apt install package`   | `Install-Package -Name package`               | Installs a package via a manager like Chocolatey.                                 |
+| Search within a file    | `grep "text" file.txt`  | `Select-String -Pattern "text" -Path file.txt`| Searches for specific text in a file.                                             |
+| Download a file         | `wget URL`              | `Invoke-WebRequest -Uri URL -OutFile file`    | Downloads a file from a URL.                                                      |
+
 
 
 # Detailed PowerShell Commands
@@ -115,11 +116,13 @@ Run PowerShell as Administrator and execute the following:
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
 
 ## Example of Installing a Package via Chocolatey:
 
 ```powershell
 choco install 7zip -y
+```
 
 This command installs the 7zip package and automatically confirms the installation with the -y flag.
 
