@@ -123,8 +123,34 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```powershell
 choco install 7zip -y
 ```
-
 This command installs the 7zip package and automatically confirms the installation with the -y flag.
+
+`choco uninstall 7zip -y` To desinstall
+
+`choco list` To see wich Package is installed
+
+###  **Add a program to System PATH**
+
+1. Open the system environment variables settings:
+   - Press `Win + R`, type `sysdm.cpl`, and press **Enter**.
+
+2. Navigate to the **Advanced** tab and click **Environment Variables**.
+
+3. Under **System Variables**, locate the `Path` variable and click **Edit**.
+
+4. Add the following path to the list:
+`C:\Program Files\7-Zip`
+
+
+5. Save your changes and close the dialog boxes.
+
+6. Restart your PowerShell session or terminal for the PATH change to take effect.
+
+### **Verify and Use**
+Now, you can simply run the following command from any directory to use `7-Zip`:
+```powershell
+7z.exe a archive.7z sfsf.txt
+
 
 # PowerShell Basics
 
