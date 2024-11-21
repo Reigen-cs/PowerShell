@@ -1,3 +1,9 @@
+![Reigen Tackling PowerShell this time](https://i.pinimg.com/originals/b6/51/eb/b651ebe1b698c0608916da0f266557d0.gif)
+
+# Reigen Tackling PowerShell this time
+
+
+
 # PowerShell Presentation: Basics, Comparisons, and Advanced Scripts
 
 ## Introduction 
@@ -209,6 +215,8 @@ To launch it from CMD :
 
 # Different PowerShell Script that I made :
 
+![Was tiring](https://i.redd.it/1cxauoeejuo41.gif)
+
 1. [BackUp](./Script/BackUp) - Backup files and directories.
 2. [Block Malicious IP](./Script/Block%20Malicious%20IP) - Script to block malicious IP addresses.
 3. [Bulk File Renaming](./Script/Bulk%20File%20Renaming) - Bulk rename files in a directory.
@@ -232,6 +240,9 @@ Each folder contains a set of scripts with detailed instructions in the respecti
 
 
 
+![Reigen hopes that you did not fall asleep](https://giffiles.alphacoders.com/218/218969.gif)
+
+# Reigen hopes that you did not fall asleep
 
 
 
