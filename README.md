@@ -150,7 +150,7 @@ This command installs the 7zip package and automatically confirms the installati
 Now, you can simply run the following command from any directory to use `7-Zip`:
 ```powershell
 7z.exe a archive.7z sfsf.txt
-
+```
 
 # PowerShell Basics
 
