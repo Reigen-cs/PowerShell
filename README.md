@@ -209,22 +209,22 @@ To launch it from CMD :
 
 # Different PowerShell Script that I made :
 
-1. [BackUp](./BackUp) - Backup files and directories.
-2. [Block Malicious IP](./Block%20Malicious%20IP) - Script to block malicious IP addresses.
-3. [Bulk File Renaming](./Bulk%20File%20Renaming) - Bulk rename files in a directory.
-4. [Encrypt and Decrypt files](./Encrypt%20and%20Decrypt%20files) - Encrypt and decrypt files for secure storage.
-5. [Find and Kill](./Find%20and%20Kill) - Find and terminate a process by name or PID.
-6. [Installation](./Installation) - Installation scripts for setting up PowerShell environments or dependencies.
-7. [Interactive and Directly](./Interactive%20and%20directly) - Scripts for interactive PowerShell commands.
-8. [Monitor website availability](./Monitor%20website%20availability) - Monitor the availability of a website or server.
-9. [Network Connectivity Tester](./Network%20Connectivity%20Tester) - Test network connectivity and diagnose network issues.
-10. [PowerShell GUI for File Operations](./PowerShell%20GUI%20for%20File%20Operations) - PowerShell-based graphical user interface for file operations.
-11. [Scheduled Task Automation](./Scheduled%20Task%20Automation) - Automate tasks using PowerShell scheduled tasks.
-12. [Script calling another one](./Script%20calling%20another%20one) - Example of one PowerShell script calling another.
-13. [System Health Dashboard](./System%20Health%20Dashboard) - Dashboard to monitor system health and performance.
-14. [System Resource Graph](./System%20Resource%20Graph) - Graphical representation of system resources usage.
-15. [Windows Service Monitor](./Windows%20Service%20Monitor) - Monitor and manage Windows services.
-16. [Windows and Linux](./Windows%20and%20linux) - Scripts for cross-platform (Windows and Linux) tasks.
+1. [BackUp](./Script/BackUp) - Backup files and directories.
+2. [Block Malicious IP](./Script/Block%20Malicious%20IP) - Script to block malicious IP addresses.
+3. [Bulk File Renaming](./Script/Bulk%20File%20Renaming) - Bulk rename files in a directory.
+4. [Encrypt and Decrypt files](./Script/Encrypt%20and%20Decrypt%20files) - Encrypt and decrypt files for secure storage.
+5. [Find and Kill](./Script/Find%20and%20Kill) - Find and terminate a process by name or PID.
+6. [Installation](./Script/Installation) - Installation scripts for setting up PowerShell environments or dependencies.
+7. [Interactive and Directly](./Script/Interactive%20and%20directly) - Scripts for interactive PowerShell commands.
+8. [Monitor website availability](./Script/Monitor%20website%20availability) - Monitor the availability of a website or server.
+9. [Network Connectivity Tester](./Script/Network%20Connectivity%20Tester) - Test network connectivity and diagnose network issues.
+10. [PowerShell GUI for File Operations](./Script/PowerShell%20GUI%20for%20File%20Operations) - PowerShell-based graphical user interface for file operations.
+11. [Scheduled Task Automation](./Script/Scheduled%20Task%20Automation) - Automate tasks using PowerShell scheduled tasks.
+12. [Script calling another one](./Script/Script%20calling%20another%20one) - Example of one PowerShell script calling another.
+13. [System Health Dashboard](./Script/System%20Health%20Dashboard) - Dashboard to monitor system health and performance.
+14. [System Resource Graph](./Script/System%20Resource%20Graph) - Graphical representation of system resources usage.
+15. [Windows Service Monitor](./Script/Windows%20Service%20Monitor) - Monitor and manage Windows services.
+16. [Windows and Linux](./Script/Windows%20and%20linux) - Scripts for cross-platform (Windows and Linux) tasks.
 
 ## Usage
 
