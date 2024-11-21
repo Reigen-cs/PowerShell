@@ -3,8 +3,9 @@ $Website = "https://facebook.com"
 
 # Check website availability
 try {
-    Invoke-WebRequest -Uri $Website -TimeoutSec 5
-    Write-Host "Website is up."
+    $Response = Invoke-WebRequest -Uri $Website -TimeoutSec 5 -ErrorAction Stop
+    Write-Host "Website is up." -ForegroundColor Green
 } catch {
-    Write-Host "Website is down."
+    Write-Host "Website is down." -ForegroundColor Red
+    Write-Host "Error Details: $($_.Exception.Message)"
 }
