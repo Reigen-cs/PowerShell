@@ -1,15 +1,25 @@
-# Define services to monitor
-$ServicesToMonitor = @("Spooler", "W32Time", "WinRM")
+# Define the services
+$services = @("Spooler", "W32Time", "WinRM")
 
-# Check the status of each service
-foreach ($Service in $ServicesToMonitor) {
-    $ServiceStatus = Get-Service -Name $Service
-
-    if ($ServiceStatus.Status -ne "Running") {
-        Write-Host "$Service is not running. Attempting to restart..."
-        Restart-Service -Name $Service -Force
-        Write-Host "$Service has been restarted."
-    } else {
-        Write-Host "$Service is running."
+# Function to stop and start services
+function Stop-Start-Service {
+    param (
+        [string]$ServiceName
+    )
+    
+    # Stop the service if it's running
+    if ((Get-Service $ServiceName).Status -eq 'Running') {
+        Write-Host "$ServiceName is running. Stopping the service..."
+        Stop-Service -Name $ServiceName -Force
+        Write-Host "$ServiceName has been stopped."
     }
+    
+    # Start the service
+    Start-Service -Name $ServiceName
+    Write-Host "$ServiceName has been restarted."
+}
+
+# Stop and start each service
+foreach ($service in $services) {
+    Stop-Start-Service -ServiceName $service
 }
